@@ -23,7 +23,7 @@ hex = "0.4.3"
 bytemuck = "1.15.0"
 
 # common dependencies
-lru = "0.12.3"
+lru = "0.16.3"
 indexmap = { version = "2.0.0", features = ["serde"] }
 log = "0.4"
 rand = "0.8.4"
