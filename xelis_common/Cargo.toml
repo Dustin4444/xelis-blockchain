@@ -61,10 +61,10 @@ tokio_with_wasm = { version = "0.7.2", features = ["macros", "sync", "time", "rt
 
 # dependencies for non-WASM
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
-tokio = { version = "1.36", default-features = false, features = ["macros", "signal", "time", "sync", "rt"], optional = true }
+tokio = { version = "1.43", default-features = false, features = ["macros", "signal", "time", "sync", "rt"], optional = true }
 
 [dev-dependencies]
-tokio = { version = "1.36", features = ["full"] }
+tokio = { version = "1.43", features = ["full"] }
 
 [features]
 tokio = ["dep:tokio", "dep:tokio_with_wasm"]
